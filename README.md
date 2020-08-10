@@ -21,13 +21,13 @@ Mindful Confrontation
 
 ## Overview
 
-_**MindFront** is a safe space for confrontation, for people to share anonymously yet mindfully about people, places and things in a positive light, even if the topic is sensitive. Think missed connections on Craigslist meets Reddit but with a gratitude filter.. and PG. Users can make an account and post on their matters. Other users with verified accounts can comment and "like" as they wish. The app prompts members to confront their matters carefully, using non agressive vocabulary and with others in mind. In fact, if a user tries to post a vulgar word, the app will algorithmically hash or replace the word. The goal of this app is to start a conversation about how to have converations with strangers. Typically anonymity creates a barrier between people and therefore allows for aggression, negativity and bullying. Mindfront will push us to mindfully confront each other and help us learn how to show up in this world with care and compassion._
+_**MindFront** is a safe space for confrontation, for people to share anonymously yet mindfully about people, places and things in a positive light, even if the topic is sensitive. Think missed connections on Craigslist meets Reddit but with a gratitude filter.. and PG. Users can make an account and post on their matters. Other users (must be subsribed users) can comment and "like" as they wish. The app prompts members to confront their matters carefully, using non aggressive vocabulary and with others in mind. In fact, if a user tries to post a vulgar word, the app will algorithmically hash or replace the word. The goal of this app is to start a conversation about how to have converations with strangers. Typically anonymity creates a barrier between people and therefore allows for aggression, negativity and bullying. Mindfront will push us to mindfully confront each other and help us learn how to show up in this world with care and compassion._
 
 <br>
 
 ## MVP
 
-_The **MindFront** MVP is to create a blog where users can post and comment. Authentication will allow users to create a membership where they have access to their posts hub, have the ability to create posts, and comment on other users post. A non-subscriber can view posts and browse the feed. If a non-subscriber clicks comments, create posts, or view my posts, they will be redirected to a login/subscribe page._
+_The **MindFront** MVP is to create a blog where users can post and comment. Authentication will allow users to create a membership where they have access to their posts feed, have the ability to create posts, and comment on other users post. A non-subscriber can view posts and browse the feed. If a non-subscriber clicks comments, create posts, or view my posts, they will be redirected to a login/subscribe page._
 
 <br>
 
