@@ -27,7 +27,7 @@ _**MindFront** is a safe space for confrontation, for people to share anonymousl
 
 ## MVP
 
-_. **MindFront** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+_**MindFront** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
 
 <br>
 
@@ -51,7 +51,7 @@ _. **MindFront** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Ph
 |      Rails       | _Ruby Framework for Back End._ |
 |      JWT         | _Gem for Authentication._ |
 |      BCRYPT      | _Gem for Authentication._ |
-|      CORS        | _Dependencies that allows for cross-origin resource sharing._ |
+|      CORS        | _Dependency that allows for cross-origin resource sharing._ |
 
 
 <br>
