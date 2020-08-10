@@ -64,7 +64,7 @@ _**MindFront** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phas
 
 [DESKTOP WORKFLOW](https://whimsical.com/GmUN8HzwvVSPJFLTLS1hNm)
 
-[MOBILE VIEWS](url)
+[MOBILE VIEWS](https://wireframe.cc/wSuIbt)
 
 
 #### Component Tree
