@@ -27,17 +27,15 @@ _**MindFront** is a safe space for confrontation, for people to share anonymousl
 
 ## MVP
 
-_**MindFront** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+_The **MindFront** MVP is to create a blog where users can post and comment. Authentication will allow users to create a membership where they have access to their posts hub, have the ability to create posts, and comment on other users post. A non-subscriber can view posts and browse the feed. If a non-subscriber clicks comments, create posts, or view my posts, they will be redirected to a login/subscribe page._
 
 <br>
 
 ### Goals
 
-- _Use Authentication for User Login_
+- _Use Authentication for User Login_ 
 - _Utilize Full CRUD for Front End and Back End._
-- _Phasellus dapibus fermentum risus vitae bibendum._
-- _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
-- _etc._
+- _Create a different experience for subscribers vs non-subscribers._
 
 <br>
 
@@ -60,9 +58,9 @@ _**MindFront** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phas
 
 #### Wireframes
 
-[DESKTOP VIEWS](https://wireframe.cc/n6vsxS)
+[DESKTOP AND MOBILE WORKFLOW](https://whimsical.com/GmUN8HzwvVSPJFLTLS1hNm)
 
-[DESKTOP WORKFLOW](https://whimsical.com/GmUN8HzwvVSPJFLTLS1hNm)
+[DESKTOP VIEWS](https://wireframe.cc/n6vsxS)
 
 [MOBILE VIEWS](https://wireframe.cc/wSuIbt)
 
@@ -148,7 +146,7 @@ src
 
 ## Post-MVP
 
-- Users can comment on comments (sub-comments)
+- Users can comment on comments (sub-comments) and edit their comments
 - Users can 'like' a comment
 - About us page
 - Footer pages (Privacy Policy, etc)
