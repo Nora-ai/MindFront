@@ -125,10 +125,13 @@ src
 | Task             | Priority | Estimated Time | Time Invested | Actual Time |
 | -----------------| :------: | :------------: | :-----------: | :---------: |
 | Back End Crud    |    H     |     6 hrs      |      hrs     |     TBD     |
+| Create Seed Data |    H     |     1 hrs      |      hrs     |     TBD     |
 | Authentication   |    H     |     6 hrs      |      hrs     |     TBD     |
 | Front End Crud   |    H     |     36 hrs     |      hrs     |     TBD     |
+| BASIC CSS        |    H     |     6 hrs      |      hrs     |     TBD     |
 | CSS              |    H     |     18 hrs     |      hrs     |     TBD     |
-| TOTAL            |          |     66 hrs     |      hrs     |     TBD     |
+| Deployment       |    H     |     3 hrs      |      hrs     |     TBD     |
+| TOTAL            |          |     76 hrs     |      hrs     |     TBD     |
 
 
 <br>
