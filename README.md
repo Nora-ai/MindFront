@@ -33,8 +33,8 @@ _. **MindFront** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Ph
 
 ### Goals
 
-- _Use Auth for User Login_
-- _consectetur adipiscing elit._
+- _Use Authentication for User Login_
+- _Utilize Full CRUD for Front End and Back End._
 - _Phasellus dapibus fermentum risus vitae bibendum._
 - _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
 - _etc._
@@ -43,15 +43,16 @@ _. **MindFront** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Ph
 
 ### Libraries and Dependencies
 
-> Use this section to list all supporting libraries and dependencies, and their role in the project. Below is an example - this needs to be replaced!
 
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
-|      React       | _Lorem ipsum dolor sit amet, consectetur._ |
-|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-| Rails            | _Lorem ipsum dolor sit amet, consectetur._ |
-|           | _Lorem ipsum dolor sit amet, consectetur._ |
-|    | _Lorem ipsum dolor sit amet, consectetur._ |
+|      React       | _Javascript Framework for Front End._ |
+|   React Router   | _Declarative Routing for React._ |
+|      Rails       | _Ruby Framework for Back End._ |
+|      JWT         | _Gem for Authentication._ |
+|      BCRYPT      | _Gem for Authentication._ |
+|      CORS        | _Dependencies that allows for cross-origin resource sharing._ |
+
 
 <br>
 
@@ -59,39 +60,18 @@ _. **MindFront** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Ph
 
 #### Wireframes
 
-> Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
+![DESKTOP VIEWS](https://wireframe.cc/n6vsxS)
 
-![Dummy Link](url)
+![DESKTOP WORKFLOW](https://whimsical.com/GmUN8HzwvVSPJFLTLS1hNm)
 
-- Desktop Landing
+![MOBILE VIEWS](url)
 
-![Dummy Link](url)
-
-- Desktop Hero
-
-![Dummy Link](url)
-
-- Resource Index
-
-![Dummy Link](url)
-
-- Resource Show
-
-![Dummy Link](url)
-
-- Tablet Resource Index
-
-![Dummy Link](url)
-
-- Mobile Resource Index
 
 #### Component Tree
 
-> Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. 
+ ![Component Tree](https://whimsical.com/P24TDNVenaNqWEGJzESByF)
 
-#### Component Hierarchy
-
-> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
+#### Component Hierarchy 
 
 ``` structure
 
@@ -100,36 +80,56 @@ src
       |__ fonts
       |__ graphics
       |__ images
-      |__ mockups
 |__ components/
       |__ Header.jsx
+      |__ Footer.jsx
+      |__ Nav.jsx
+      |__ Login.jsx
+      |__ Subscribe.jsx
+      |__ Main.jsx
+      |__ ShowPosts.jsx
+      |__ ShowComments.jsx
+      |__ EditPost.jsx
+      |__ CreatePost.jsx
+      |__ DeletePost.jsx
 |__ services/
+    |__ api-helper.js
+    |__ auth.js
+    |__ users.js
+    |__ posts.js
+    |__ comments.js
+  
 
 ```
 
 #### Component Breakdown
 
-> Use this section to go into further depth regarding your components, including breaking down the components as stateless or stateful, and considering the passing of data between those components.
 
-|  Component   |    Type    | state | props | Description                                                      |
-| :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
-|    Header    | functional |   n   |   n   | _The header will contain the navigation and logo._               |
-|  Navigation  | functional |   n   |   n   | _The navigation will provide a link to each of the pages._       |
-|   Gallery    |   class    |   y   |   n   | _The gallery will render the posts using cards in flexbox._      |
-| Gallery Card | functional |   n   |   y   | _The cards will render the post info via props._                 |
-|    Footer    | functional |   n   |   n   | _The footer will show info about me and a link to my portfolio._ |
+|  Component    |    Type    | state | props | Description                                                      |
+| :----------:  | :--------: | :---: | :---: | :--------------------------------------------------------------- |
+|    Header     | functional |   n   |   n   | _The header will contain the logo._                              |
+|    Footer     | functional |   n   |   n   | _The Footer will contain links to Post MVP pages._                 |
+|     Nav       | functional |   y   |   y   | _The Nav will provide a link to Home, My Posts, and Create Post._ |
+|     Login     | functional |   y   |   y   | _The Login will prompt user for username and password._          |
+|   Subscribe   | functional |   y   |   y   | _Subscribe will prompt user to fill in username, email and password._ |
+|     Main      | functional |   y   |   y   | _Main houses all of the CRUD components  ._ |
+|   ShowPosts   | functional |   y   |   y   | _ShowPosts will show a feed of all existing posts._ |
+|  ShowComments | functional |   y   |   y   | _ShowComments will show one post and all of its comments._ |
+|    EditPost   | functional |   y   |   y   | _User will be able to edit their post._ |
+|   CreatePost  | functional |   y   |   y   | _User can create a new post._ |
+|   DeletePost  | functional |   y   |   y   | _User can delete their post._ |
 
 #### Time Estimates
 
-> Use this section to estimate the time necessary to build out each of the components you've described above.
 
-| Task                | Priority | Estimated Time | Time Invested | Actual Time |
-| ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
+| Task             | Priority | Estimated Time | Time Invested | Actual Time |
+| -----------------| :------: | :------------: | :-----------: | :---------: |
+| Back End Crud    |    H     |     6 hrs      |      hrs     |     TBD     |
+| Authentication   |    H     |     6 hrs      |      hrs     |     TBD     |
+| Front End Crud   |    H     |     36 hrs     |      hrs     |     TBD     |
+| CSS              |    H     |     18 hrs     |      hrs     |     TBD     |
+| TOTAL            |          |     66 hrs     |      hrs     |     TBD     |
 
-> _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
 
 <br>
 
@@ -147,7 +147,10 @@ src
 
 - Users can comment on comments (sub-comments)
 - Users can 'like' a comment
-- Add more themed categories
+- About us page
+- Footer pages (Privacy Policy, etc)
+- Add in Algorithm that will hash out vulgar/curse words
+- Upload images
 
 ***
 
