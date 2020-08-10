@@ -60,16 +60,16 @@ _. **MindFront** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Ph
 
 #### Wireframes
 
-![DESKTOP VIEWS](https://wireframe.cc/n6vsxS)
+[DESKTOP VIEWS](https://wireframe.cc/n6vsxS)
 
-![DESKTOP WORKFLOW](https://whimsical.com/GmUN8HzwvVSPJFLTLS1hNm)
+[DESKTOP WORKFLOW](https://whimsical.com/GmUN8HzwvVSPJFLTLS1hNm)
 
-![MOBILE VIEWS](url)
+[MOBILE VIEWS](url)
 
 
 #### Component Tree
 
- ![Component Tree](https://whimsical.com/P24TDNVenaNqWEGJzESByF)
+ [Component Tree](https://whimsical.com/P24TDNVenaNqWEGJzESByF)
 
 #### Component Hierarchy 
 
