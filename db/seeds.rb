@@ -6,30 +6,45 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+users = [
+{
+    username: "bob",
+    email: "bob@bob.com",
+    password: "booboob"
+}
+]
 
-
-posts = { {
+posts = [ 
+{
+    user_id: 1,
     subject: "blah",
     content: "blah blah blah", 
     img_url: "",
     bittersweet: "bitter"
 }, 
 {
+    user_id: 1,
     subject: "bloop",
     content: "bloop bloop bloop", 
     img_url: "",
     bittersweet: "bitter"
 },
 {
+    user_id: 1,
     subject: "bleep",
     content: "blah blah blah", 
     img_url: "",
     bittersweet: "bitter"
 }
-}
+]
 
-users = {
-    username: "bob",
-    email: "bob@bob.com",
-    password: "bobob"
+comments = [ {
+    content: "ba pa ra pa bababa ra rababa ramm",
+    post_id: 1,
+    user_id: 1
 }
+]
+
+User.create(users)
+Post.create(posts)
+Comment.create(comments)
