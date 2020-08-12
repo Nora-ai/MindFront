@@ -1,5 +1,6 @@
 import React from 'react'
 import './Home.css'
+import ShowPosts from '../ShowPosts/ShowPosts'
 
 
 export default function Home () {
@@ -13,6 +14,8 @@ export default function Home () {
         </div>
 
         <img class="homepage-image" src="https://res.cloudinary.com/alienora/image/upload/v1597189947/pexels-fotografierende-4617223_t7zr9m.jpg"></img>
+
+        <ShowPosts />
 
     </>)
 }

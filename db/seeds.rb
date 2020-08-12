@@ -19,21 +19,21 @@ posts = [
     user_id: 1,
     subject: "blah",
     content: "blah blah blah", 
-    img_url: "",
+    img_url: "https://res.cloudinary.com/alienora/image/upload/v1597242764/pexels-alex-fu-1497148_kk7fhi.jpg",
     bittersweet: "bitter"
 }, 
 {
     user_id: 1,
     subject: "bloop",
     content: "bloop bloop bloop", 
-    img_url: "",
+    img_url: "https://res.cloudinary.com/alienora/image/upload/v1597242764/pexels-karolina-grabowska-4464377_r1f6kg.jpg",
     bittersweet: "bitter"
 },
 {
     user_id: 1,
     subject: "bleep",
     content: "blah blah blah", 
-    img_url: "",
+    img_url: "https://res.cloudinary.com/alienora/image/upload/v1597242765/pexels-olya-kobruseva-4679168_r2ej8f.jpg",
     bittersweet: "bitter"
 }
 ]

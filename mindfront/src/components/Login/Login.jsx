@@ -3,22 +3,22 @@ import './Login.css'
 import { loginUser } from '../../services/auth'
 
 export default function Login (props) {
-    const [loginData, setLoginData] = useState({
+    const [formData, setFormData] = useState({
         username: "",
         password: ""
     })
 
     const handleChange = (e) => {
         const { name, value } = e.target
-        setLoginData({
-            ...loginData,
+        setFormData({
+            ...formData,
             [name]: value
         })
     }
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        const userData = await loginUser(loginData)
+        const userData = await loginUser(formData)
         props.setCurrentUser(userData)
         props.history.push('/')
     }
@@ -31,8 +31,8 @@ export default function Login (props) {
                 Username
                 <input
                     type="text"
-                    name="username"
-                    value={loginData.username}
+                    name="username"s
+                    value={formData.username}
                     onChange={handleChange}
                 />
             </label>
@@ -41,11 +41,13 @@ export default function Login (props) {
                 <input
                     type="password"
                     name="password"
-                    value={loginData.password}
+                    value={formData.password}
                     onChange={handleChange}
                 />
             </label>
+            <button>Submit</button>
         </form>
+
 
     </>)
 }
