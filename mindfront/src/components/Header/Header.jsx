@@ -4,7 +4,7 @@ import './Header.css'
 export default function Header () {
 
     return (<>
-        <h1 class="mindfront-logo">MindFront</h1>
+        <h1 className="mindfront-logo">MindFront</h1>
     </>)
 
 }

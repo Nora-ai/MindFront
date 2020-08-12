@@ -34,10 +34,10 @@ export default function Main(props) {
             <Nav />
 
         <Route path='/' exact render={() => (<>
-            <button class="login-button">Login</button>
-            <button class="subscribe-button">Subscribe</button>
+            <button className="login-button">Login</button>
+            <button className="subscribe-button">Subscribe</button>
             <Home />
-            <p class="need-space"></p>
+            <p className="need-space"></p>
             <ShowPosts 
                 posts={posts}
                 setPosts={setPosts}
@@ -63,7 +63,16 @@ export default function Main(props) {
         )}>
         </Route>
 
+        
+        <Route path ='/new-post' render={(props) => (
 
+            <CreatePost 
+            {...props}
+            posts={posts}
+            setPosts={setPosts}
+            />
+        )}>
+        </Route>
 
         </main>
     )
