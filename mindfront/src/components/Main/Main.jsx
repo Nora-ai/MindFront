@@ -5,6 +5,7 @@ import './Main.css'
 //import { readAllComments } from '../services/comments'
 
 import Nav from '../Nav/Nav'
+import Home from '../Home/Home'
 import Login from '../Login/Login'
 import Subscribe from '../Subscribe/Subscribe'
 import CreatePost from '../CreatePost/CreatePost'
@@ -13,21 +14,38 @@ import ShowPosts from '../ShowPosts/ShowPosts'
 import ShowComments from '../ShowComments/ShowComments'
 import DeletePost from '../DeletePost/DeletePost'
 
-export default function Main() {
+export default function Main(props) {
+
+    const {setCurrentUser} = props;
 
     return (
         <main>
             <Nav />
-            <Login />
-            <Subscribe />
 
-        <div class="homepage-description">
-            <h2>What is MindFront?</h2>
-            <p class="mindfront-description">MindFront is a safe space for confrontation, for people to share anonymously yet mindfully about people, places and things in a positive light, even if the topic is sensitive. Mindfront will push us to mindfully confront each other and help us learn how to show up in this world with care and compassion.</p>
-            <p class='about-us'>About us</p>
-        </div>
+        <Route path='/' exact>
+            <button class="login-button">Login</button>
+            <button class="subscribe-button">Subscribe</button>
+            <Home />
+        </Route>
 
-        <img class="homepage-image" src="https://res.cloudinary.com/alienora/image/upload/v1597189947/pexels-fotografierende-4617223_t7zr9m.jpg"></img>
+
+        <Route path='/login' render={(props) => (
+            <Login 
+            {...props}
+            setCurrentUser={setCurrentUser}
+        />
+        )}>
+        </Route>
+
+
+        <Route path='/subscribe' render={(props) => (
+            <Subscribe 
+            {...props}
+            setCurrentUser={setCurrentUser}
+            />
+        )}>
+        </Route>
+
 
         </main>
     )

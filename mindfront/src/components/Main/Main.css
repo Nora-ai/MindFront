@@ -1,27 +1,18 @@
-.homepage-description {
-    width: 300px;
+
+.login-button {
     position: absolute;
-    top: 200px;
-    left: 200px;
-}
-
-h2 {
-
-}
-
-.mindfront-description {
+    right: 200px;
+    top: 60px;
+    background: transparent;
+    border: none;
     font-size: 20px;
-
 }
 
-.about-us {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.homepage-image {
-    width: 350px;
+.subscribe-button {
     position: absolute;
-    right: 100px;
-    top: 200px;
+    right: 80px;
+    top: 60px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
 }

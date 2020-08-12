@@ -1,9 +1,7 @@
-.login-button {
-    position: absolute;
-    right: 200px;
-    top: 60px;
-    background: transparent;
-    border: none;
-    font-size: 20px;
-
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
 }
