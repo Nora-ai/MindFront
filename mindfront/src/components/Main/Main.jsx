@@ -13,6 +13,7 @@ import EditPost from '../EditPost/EditPost'
 import ShowPosts from '../ShowPosts/ShowPosts'
 import ShowComments from '../ShowComments/ShowComments'
 import DeletePost from '../DeletePost/DeletePost'
+import Footer from '../Footer/Footer'
 
 export default function Main(props) {
 
@@ -42,6 +43,7 @@ export default function Main(props) {
                 posts={posts}
                 setPosts={setPosts}
                 />
+            <Footer />
                 </>)} >
         </Route>
 
