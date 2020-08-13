@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Link } from 'react'
 import './Nav.css'
 
 export default function Nav () {
@@ -7,7 +7,7 @@ export default function Nav () {
 
     <div className="nav-bar">
         <div className="nav-bar-buttons">
-            <button><span>Home</span></button>
+           <button><span>Home</span></button>
             <button><span>My Posts</span></button>
             <button><span>Create Post</span></button>
         </div>
