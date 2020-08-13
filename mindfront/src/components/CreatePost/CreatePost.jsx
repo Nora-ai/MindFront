@@ -5,13 +5,13 @@ import './CreatePost.css'
 export default function CreatePost (props) {
     const [formData, setFormData] = useState ({
         subject: "",
-        content: "",
-        img_url: ""
+        content: ""
+        // img_url: ""
     })
 
     const handleChange = (e) => {
-        const { value } = e.target
-        setFormData({ name: value })
+        const { name, value } = e.target
+        setFormData({ ...formData, [name]: value })
     }
 
     const handleSubmit = async (e) => {
@@ -21,7 +21,7 @@ export default function CreatePost (props) {
             ...props.posts,
             newPost
         ])
-        props.history.push('/posts')
+        props.history.push('/')
     }
 
     return (
@@ -32,6 +32,7 @@ export default function CreatePost (props) {
             <label>
                 <input
                     className="new-post-subject"
+                    name="subject"
                     placeholder="subject"
                     type="text"
                     value={formData.subject}
@@ -42,6 +43,7 @@ export default function CreatePost (props) {
             <label>
                 <input
                     className="new-post-content"
+                    name="content"
                     type="text"
                     value={formData.content}
                     onChange={handleChange}

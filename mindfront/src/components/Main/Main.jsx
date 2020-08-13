@@ -35,8 +35,7 @@ export default function Main(props) {
             <Nav />
 
         <Route path='/' exact render={() => (<>
-           <Link to='/login'><button className="login-button">Login</button></Link>
-            <Link to='/subscribe'><button className="subscribe-button">Subscribe</button></Link>
+         
             <Home />
             <p className="need-space"></p>
             <ShowPosts 
