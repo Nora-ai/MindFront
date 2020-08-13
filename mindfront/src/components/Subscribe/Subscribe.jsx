@@ -27,7 +27,7 @@ const handleSubmit = async (e) => {
 
     return (<>
 
-        <form class="subscribe-form">
+        <form className="subscribe-form">
 
             <h3>Subscribe to Mindfront</h3>
             <label>

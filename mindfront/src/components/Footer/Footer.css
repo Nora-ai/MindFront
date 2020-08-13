@@ -1,0 +1,18 @@
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 0;
+    margin: 50px 100px;
+    background-color: #F0EFEB;
+}
+
+.end-quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+}

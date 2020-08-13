@@ -10,7 +10,7 @@ export default function ShowPosts (props) {
         {props.posts &&
         
         props.posts.map((post) => (
-            <div class="homepage-posts">
+            <div className="homepage-posts">
             <p>{post.subject}</p>
             <p>{post.content}</p>
             <img src={post.img_url}></img>

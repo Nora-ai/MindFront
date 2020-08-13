@@ -13,6 +13,7 @@ import EditPost from '../EditPost/EditPost'
 import ShowPosts from '../ShowPosts/ShowPosts'
 import ShowComments from '../ShowComments/ShowComments'
 import DeletePost from '../DeletePost/DeletePost'
+import Footer from '../Footer/Footer'
 
 export default function Main(props) {
 
@@ -34,14 +35,15 @@ export default function Main(props) {
             <Nav />
 
         <Route path='/' exact render={() => (<>
-            <button class="login-button">Login</button>
-            <button class="subscribe-button">Subscribe</button>
+            <button className="login-button">Login</button>
+            <button className="subscribe-button">Subscribe</button>
             <Home />
-            <p class="need-space"></p>
+            <p className="need-space"></p>
             <ShowPosts 
                 posts={posts}
                 setPosts={setPosts}
                 />
+            <Footer />
                 </>)} >
         </Route>
 
@@ -63,7 +65,16 @@ export default function Main(props) {
         )}>
         </Route>
 
+        
+        <Route path ='/new-post' render={(props) => (
 
+            <CreatePost 
+            {...props}
+            posts={posts}
+            setPosts={setPosts}
+            />
+        )}>
+        </Route>
 
         </main>
     )
