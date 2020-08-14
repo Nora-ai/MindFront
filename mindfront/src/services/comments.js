@@ -10,7 +10,7 @@ export const readOneComment = async (id) => {
 }
 
 export const postComment = async (commentData) => {
-    const resp = await api.post( '/comments', { comment: commmentData })
+    const resp = await api.post( '/comments', { comment: commentData })
     return resp.data
 }
 

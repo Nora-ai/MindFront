@@ -1,0 +1,14 @@
+.edit-post {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit-image img {
+    width: 100px;
+}
+
+.edit-content {
+    display: flex;
+    flex-direction: column;
+}
