@@ -2,11 +2,16 @@ import React, { useState } from 'react'
 import { postPost } from '../../services/posts'
 import './CreatePost.css'
 
+//to do
+//drop in image url
+//recent posts at the top
+//if no image added, add default image
+
 export default function CreatePost (props) {
     const [formData, setFormData] = useState ({
         subject: "",
-        content: ""
-        // img_url: ""
+        content: "",
+        img_url: ""
     })
 
     const handleChange = (e) => {
@@ -53,7 +58,7 @@ export default function CreatePost (props) {
             <label>
                 <input
                 className="new-post-image"
-                type="url"
+                type="text"
                 placeholder="image"
                 value={formData.img_url}
                 onChange={handleChange}

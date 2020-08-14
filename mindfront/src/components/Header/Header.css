@@ -3,7 +3,6 @@
     margin-top: 50px;
 }
 
-
 .login-button {
     position: absolute;
     right: 200px;
@@ -19,5 +18,19 @@
     top: 60px;
     background: transparent;
     border: none;
+    font-size: 20px;
+}
+
+.signed-in-user {
+    position: absolute;
+    right: 220px;
+    top: 80px;
+    font-size: 20px;
+}
+
+.logout {
+    position: absolute;
+    right: 200px;
+    top: 80px;
     font-size: 20px;
 }

@@ -9,12 +9,18 @@ export default function EditPost (props) {
         
         props.posts.map((post) => (
             <div className="edit-post">
-                <div class="edit-image">
+                <div className="edit-image">
                     <img src={post.img_url}></img>
                 </div>
-                <div class='edit-content'> 
+                <div className='edit-content'> 
                     <p>{post.subject}</p>
                     <p>{post.content}</p>
+                </div>
+                <div>
+                    <button>Edit</button>
+                </div>
+                <div>
+                    <button>Delete</button>
                 </div>
             </div>
         ))} 

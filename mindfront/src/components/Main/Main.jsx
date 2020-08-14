@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Link, Route } from 'react-router-dom'
 import './Main.css'
 import { readAllPosts } from '../../services/posts'
-//import { readAllComments } from '../services/comments'
+import { readAllComments } from '../../services/comments'
 
 import Nav from '../Nav/Nav'
 import Home from '../Home/Home'
@@ -20,14 +20,21 @@ export default function Main(props) {
     const {setCurrentUser} = props
 
     const [posts, setPosts] = useState([])
+    const [comments, setComments] = useState([])
 
     const getPosts = async () => {
         const postsList = await readAllPosts()
         setPosts(postsList)
     }
 
+    const getComments = async () => {
+        const commentsList = await readAllComments()
+        setComments(commentsList)
+    }
+
     useEffect(() => {
         getPosts()
+        getComments()
     }, [])
 
     return (
@@ -74,11 +81,18 @@ export default function Main(props) {
         )}>
         </Route>
 
-        <Route path='/edit' render={(props) => (
+        <Route path='/my-posts' render={(props) => (
             <EditPost
             {...props}
             posts={posts}
             setPosts={setPosts}
+            />
+        )}>
+        </Route>
+
+        <Route path='/post/:id/comments' render={(props) => (
+            <ShowComments
+                {...props}
             />
         )}>
         </Route>

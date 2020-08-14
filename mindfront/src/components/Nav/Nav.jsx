@@ -1,4 +1,5 @@
-import React, { Link } from 'react'
+import React from 'react'
+import { Link } from 'react-router-dom'
 import './Nav.css'
 
 export default function Nav () {
@@ -7,9 +8,9 @@ export default function Nav () {
 
     <div className="nav-bar">
         <div className="nav-bar-buttons">
-           <button><span>Home</span></button>
-            <button><span>My Posts</span></button>
-            <button><span>Create Post</span></button>
+           <Link to='/'><button><span>Home</span></button></Link>
+            <Link to='/my-posts'><button><span>My Posts</span></button></Link>
+            <Link to='/new-post'><button><span>Create Post</span></button></Link>
         </div>
         <div className="nav-bar-icons">
             <img src="https://res.cloudinary.com/alienora/image/upload/v1597185032/download-2_z5wzon.png"></img>
