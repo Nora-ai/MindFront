@@ -1,11 +1,26 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import { putPost } from '../../services/posts'
 import './EditPost.css'
 
 export default function EditPost (props) {
+    const [formData, setFormData] = useState({
+        subject: "",
+        content: ""
+    })
+
+    useEffect(() => {
+        defaultFormData()
+    }, [props.posts])
+
+    const defaultFormData = () => {
+
+    }
+
+
 
     return (<>
 
-{props.posts &&
+        {props.posts &&
         
         props.posts.map((post) => (
             <div className="edit-post">
