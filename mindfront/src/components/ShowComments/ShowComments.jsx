@@ -1,19 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './ShowComments.css'
+//import { readAllComments } from '../../services/comments'
 
 export default function ShowComments (props) {
+  
+    const postId = props.match.params.id
+
+    useEffect(() => {
+
+    }, [])
+
+    //prevprops
 
     return (<>
 
         
-           
+
 
     </>)
+ 
     
 }
 
-//grab the post from showpost
-//show comments related to that post
-//allow user to comment
-
- //const postComments = props.history
