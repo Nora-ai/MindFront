@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import { Route } from 'react-router-dom'
+import { Link, Route } from 'react-router-dom'
 import './Main.css'
 import { readAllPosts } from '../../services/posts'
-//import { readAllComments } from '../services/comments'
+import { readAllComments } from '../../services/comments'
 
 import Nav from '../Nav/Nav'
 import Home from '../Home/Home'
@@ -20,14 +20,21 @@ export default function Main(props) {
     const {setCurrentUser} = props
 
     const [posts, setPosts] = useState([])
+    const [comments, setComments] = useState([])
 
     const getPosts = async () => {
         const postsList = await readAllPosts()
         setPosts(postsList)
     }
 
+    const getComments = async () => {
+        const commentsList = await readAllComments()
+        setComments(commentsList)
+    }
+
     useEffect(() => {
         getPosts()
+        getComments()
     }, [])
 
     return (
@@ -35,8 +42,7 @@ export default function Main(props) {
             <Nav />
 
         <Route path='/' exact render={() => (<>
-            <button className="login-button">Login</button>
-            <button className="subscribe-button">Subscribe</button>
+         
             <Home />
             <p className="need-space"></p>
             <ShowPosts 
@@ -48,7 +54,7 @@ export default function Main(props) {
         </Route>
 
 
-        <Route path='/auth/login' render={(props) => (
+        <Route path='/login' render={(props) => (
             <Login 
             {...props}
             setCurrentUser={setCurrentUser}
@@ -57,7 +63,7 @@ export default function Main(props) {
         </Route>
 
 
-        <Route path='/auth/verify' render={(props) => (
+        <Route path='/subscribe' render={(props) => (
             <Subscribe 
             {...props}
             setCurrentUser={setCurrentUser}
@@ -66,12 +72,27 @@ export default function Main(props) {
         </Route>
 
         
-        <Route path ='/new-post' render={(props) => (
-
+        <Route path='/new-post' render={(props) => (
             <CreatePost 
             {...props}
             posts={posts}
             setPosts={setPosts}
+            />
+        )}>
+        </Route>
+
+        <Route path='/my-posts' render={(props) => (
+            <EditPost
+            {...props}
+            posts={posts}
+            setPosts={setPosts}
+            />
+        )}>
+        </Route>
+
+        <Route path='/post/:id/comments' render={(props) => (
+            <ShowComments
+                {...props}
             />
         )}>
         </Route>

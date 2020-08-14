@@ -2,6 +2,11 @@ import React, { useState } from 'react'
 import { postPost } from '../../services/posts'
 import './CreatePost.css'
 
+//to do
+//drop in image url
+//recent posts at the top
+//if no image added, add default image
+
 export default function CreatePost (props) {
     const [formData, setFormData] = useState ({
         subject: "",
@@ -10,8 +15,8 @@ export default function CreatePost (props) {
     })
 
     const handleChange = (e) => {
-        const { value } = e.target
-        setFormData({ name: value })
+        const { name, value } = e.target
+        setFormData({ ...formData, [name]: value })
     }
 
     const handleSubmit = async (e) => {
@@ -21,7 +26,7 @@ export default function CreatePost (props) {
             ...props.posts,
             newPost
         ])
-        props.history.push('/posts')
+        props.history.push('/')
     }
 
     return (
@@ -32,6 +37,7 @@ export default function CreatePost (props) {
             <label>
                 <input
                     className="new-post-subject"
+                    name="subject"
                     placeholder="subject"
                     type="text"
                     value={formData.subject}
@@ -42,6 +48,7 @@ export default function CreatePost (props) {
             <label>
                 <input
                     className="new-post-content"
+                    name="content"
                     type="text"
                     value={formData.content}
                     onChange={handleChange}
@@ -51,7 +58,7 @@ export default function CreatePost (props) {
             <label>
                 <input
                 className="new-post-image"
-                type="url"
+                type="text"
                 placeholder="image"
                 value={formData.img_url}
                 onChange={handleChange}
