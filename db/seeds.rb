@@ -13,9 +13,19 @@ User.destroy_all
 
 users = [
 {
-    username: "bob",
+    username: "bob-anonymous",
     email: "bob@bob.com",
-    password: "booboob"
+    password: "bobbob"
+}, 
+{
+    username: "nora",
+    email: "nora@nora.com",
+    password: "noranora"
+},
+{
+    username: "bill-anonymous",
+    email: "bill@bill.com",
+    password: "billbill"
 }
 ]
 

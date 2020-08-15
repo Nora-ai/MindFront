@@ -16,6 +16,9 @@ export default function EditPost (props) {
 
     }
 
+    //if setFormData {
+      //return <Redirect to={`/subscriptions`} />
+    //}
 
 
     return (<>
