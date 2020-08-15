@@ -21,7 +21,7 @@ const defaultFormData = () => {
     })
 
     if (currentPost) {
-        setFormData({ name: currentPost.name})
+        setFormData({ subject: currentPost.subject, content: currentPost.content })
     }
 }
 
@@ -70,6 +70,7 @@ const handleSubmit = async (e) => {
                     onChange={handleChange}
                 />
             </label>
+            <button>submit</button>
         </form>
 
 

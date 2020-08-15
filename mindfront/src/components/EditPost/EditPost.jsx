@@ -20,7 +20,7 @@ export default function EditPost (props) {
                     <p>{post.content}</p>
                 </div>
                 <div>
-                  <Link to={`/posts/${post.id}/edit`}><button>Edit</button></Link>
+                  <Link to={`/post/${post.id}/edit`}><button>Edit</button></Link>
                 </div>
                 
                 <div>

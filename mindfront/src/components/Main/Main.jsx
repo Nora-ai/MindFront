@@ -14,7 +14,7 @@ import EditPost from '../EditPost/EditPost'
 import EditOnePost from '../EditOnePost/EditOnePost'
 import ShowPosts from '../ShowPosts/ShowPosts'
 import ShowComments from '../ShowComments/ShowComments'
-import Addcomments from '../AddComments/AddComments'
+//import AddComments from '../AddComments/AddComments'
 import DeletePost from '../DeletePost/DeletePost'
 import Footer from '../Footer/Footer'
 
@@ -99,14 +99,14 @@ export default function Main(props) {
         )}>
         </Route>
 
-        <Route path='/post/:id/edit' render={(props) => {
+        <Route path='/post/:id/edit' render={(props) => (
             <EditOnePost 
             {...props}
             posts={posts}
             setPosts={setPosts}
             />
-        }}>
-        </Route>
+        )}>
+        </Route> 
 
         <Route path='/post/:id/comments' render={(props) => (
             <ShowComments
