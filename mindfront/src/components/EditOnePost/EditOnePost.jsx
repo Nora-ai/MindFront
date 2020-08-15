@@ -39,7 +39,7 @@ const handleSubmit = async (e) => {
             return currentPost.id === parseInt(id) ? newPost : currentPost
         })
     )
-    props.history.push('/posts')
+    props.history.push('/my-posts')
 }
 
     return (<>
@@ -49,7 +49,8 @@ const handleSubmit = async (e) => {
             <label>
                 subject
                 <input
-                    type='text'
+                    type="text"
+                    name="subject"
                     value={formData.subject}
                     onChange={handleChange}
                 />
@@ -57,7 +58,8 @@ const handleSubmit = async (e) => {
             <label>
                 content
                 <input
-                    type='text'
+                    type="text"
+                    name="content"
                     value={formData.content}
                     onChange={handleChange}
                 />
@@ -65,7 +67,8 @@ const handleSubmit = async (e) => {
             <label>
                 image
                 <input
-                    type='text'
+                    type="text"
+                    name="img_url"
                     value={formData.img_url}
                     onChange={handleChange}
                 />

@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react'
-import { Link, Route } from 'react-router-dom'
+import { Route } from 'react-router-dom'
 import './Main.css'
 import { readAllPosts } from '../../services/posts'
 import { readAllComments } from '../../services/comments'
 import { putPost } from '../../services/posts'
+import { destroyPost } from '../../services/posts'
 
 import Nav from '../Nav/Nav'
 import Home from '../Home/Home'
@@ -15,12 +16,11 @@ import EditOnePost from '../EditOnePost/EditOnePost'
 import ShowPosts from '../ShowPosts/ShowPosts'
 import ShowComments from '../ShowComments/ShowComments'
 //import AddComments from '../AddComments/AddComments'
-import DeletePost from '../DeletePost/DeletePost'
 import Footer from '../Footer/Footer'
 
 export default function Main(props) {
 
-    const {setCurrentUser} = props
+    const {currentUser, setCurrentUser} = props
 
     const [posts, setPosts] = useState([])
     const [comments, setComments] = useState([])
@@ -45,6 +45,15 @@ export default function Main(props) {
         getComments()
         editPost()
     }, [])
+
+
+    const handleDelete = async (id) => {
+        await destroyPost(id)
+        setPosts(posts.filter(post => {
+            return post.id !== id 
+        }))
+     }
+
 
     return (
         <main>
@@ -95,6 +104,8 @@ export default function Main(props) {
             {...props}
             posts={posts}
             setPosts={setPosts}
+            handleDelete={handleDelete}
+            currentUser={currentUser}
             />
         )}>
         </Route>

@@ -21,18 +21,32 @@ export default function ShowComments (props) {
         setComments(post.comments)
     }
 
+    console.log(post)
 
     return (<>
 
+    { post && 
         <div className="show-all-comments">
-        <p>{postId}</p>
-        <p></p>
+            <p>{post.subject}</p>
+            <p>{post.content}</p>
+            <p>{post.img_url}</p>
+
+            {comments.map((comment) => (
+                <p>{comment.content}</p>
+            ))}
 
         </div>
+    }
 
-       <AddComment />
+       <AddComment 
+       {...props}
+       comments={comments}
+       setComments={setComments}
+       />
     </>)
  
     
 }
 
+
+  
