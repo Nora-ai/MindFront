@@ -58,7 +58,8 @@ export default function CreatePost (props) {
             <label>
                 <input
                 className="new-post-image"
-                type="url"
+                type="text"
+                name="img_url"
                 placeholder="image-url"
                 src={formData.img_url}
                 onChange={handleChange}
