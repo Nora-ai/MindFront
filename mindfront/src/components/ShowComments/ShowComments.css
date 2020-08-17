@@ -1,6 +1,23 @@
 .show-all-comments {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin-top: 300px;
+    align-items: center;
+    margin-top: 80px;
+}
 
+.show-one-post-subject {
+
+}
+
+.show-one-post-content {
+    
+}
+
+.show-one-post-image {
+    
+}
+
+.show-one-post-comments {
+    
 }

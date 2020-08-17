@@ -6,6 +6,13 @@ import './ShowPosts.css'
 
 export default function ShowPosts (props) {
 
+    //const ascOrder = props.posts
+
+    //const descOrder = ascOrder.sort((a, b) => b.created_at - a.created_at)
+
+    //console.log(ascOrder)
+    //console.log(descOrder)
+
     return (<>
 
         {props.posts &&

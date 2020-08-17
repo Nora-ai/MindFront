@@ -21,15 +21,13 @@ export default function ShowComments (props) {
         setComments(post.comments)
     }
 
-    console.log(post)
-
     return (<>
 
     { post && 
         <div className="show-all-comments">
             <p>{post.subject}</p>
             <p>{post.content}</p>
-            <p>{post.img_url}</p>
+            <img src={post.img_url}></img>
 
             {comments.map((comment) => (
                 <p>{comment.content}</p>

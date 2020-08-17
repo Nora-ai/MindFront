@@ -25,11 +25,11 @@ export default function EditPost (props) {
                     <p>{post.content}</p>
                 </div>
                 <div>
-                  <Link to={`/post/${post.id}/edit`}><button>Edit</button></Link>
+                  <Link to={`/post/${post.id}/edit`}><button className="edit-button">Edit</button></Link>
                 </div>
                 
                 <div>
-                    <button onClick={() => props.handleDelete(post.id)}>Delete</button>
+                    <button className="delete-button" onClick={() => props.handleDelete(post.id)}>Delete</button>
                 </div>
             </div>
         ))} 

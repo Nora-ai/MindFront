@@ -44,36 +44,39 @@ const handleSubmit = async (e) => {
 
     return (<>
 
-        <form onSubmit={handleSubmit}>
-            <p>Edit Post</p>
-            <label>
+        <form className="edit-one-form" onSubmit={handleSubmit}>
+            <h3>Edit Post</h3>
+            <label className="edit-label-subject">
                 subject
                 <input
+                    className="edit-one-subject"
                     type="text"
                     name="subject"
                     value={formData.subject}
                     onChange={handleChange}
                 />
             </label>
-            <label>
+            <label className="edit-label-content">
                 content
                 <input
+                    className="edit-one-content"
                     type="text"
                     name="content"
                     value={formData.content}
                     onChange={handleChange}
                 />
             </label>
-            <label>
+            <label className='edit-label-image'>
                 image
                 <input
+                    className="edit-one-image"
                     type="text"
                     name="img_url"
                     value={formData.img_url}
                     onChange={handleChange}
                 />
             </label>
-            <button>submit</button>
+            <button className="edit-one-submit">submit</button>
         </form>
 
 
