@@ -1,14 +1,25 @@
 .edit-post {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    background-color: #F8EDEB;
+    margin: 20px 100px;
+    padding: 20px;
 }
 
 .edit-image img {
     width: 100px;
+    height: 150px;
 }
 
 .edit-content {
     display: flex;
     flex-direction: column;
+}
+
+.edit-button {
+}
+
+.delete-button {
+
 }

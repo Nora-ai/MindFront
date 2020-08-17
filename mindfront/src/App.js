@@ -24,6 +24,7 @@ function App() {
     setCurrentUser={setCurrentUser}
   />
   <Main 
+    currentUser={currentUser}
     setCurrentUser={setCurrentUser}
     />
   </>);
