@@ -21,14 +21,13 @@ export default function EditPost (props) {
                     <img src={post.img_url}></img>
                 </div>
                 <div className='edit-content'> 
-                    <p>{post.subject}</p>
-                    <p>{post.content}</p>
+                    <p className="edit-post-subject">{post.subject}</p>
+                    <p className="edit-post-content">{post.content}</p>
                 </div>
-                <div>
-                  <Link to={`/post/${post.id}/edit`}><button className="edit-button">Edit</button></Link>
-                </div>
-                
-                <div>
+
+                <div className="edit-delete-buttons">
+                    <Link to={`/post/${post.id}/edit`}><button className="edit-button">Edit</button></Link>
+    
                     <button className="delete-button" onClick={() => props.handleDelete(post.id)}>Delete</button>
                 </div>
             </div>

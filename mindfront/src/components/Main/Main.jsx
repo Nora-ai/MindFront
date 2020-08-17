@@ -57,7 +57,9 @@ export default function Main(props) {
 
     return (
         <main>
-            <Nav />
+            <Nav 
+                currentUser={currentUser}
+            />
 
         <Route path='/' exact render={() => (<>
          
@@ -66,6 +68,7 @@ export default function Main(props) {
             <ShowPosts 
                 posts={posts}
                 setPosts={setPosts}
+                currentUser={currentUser}
                 />
             <Footer />
                 </>)} >

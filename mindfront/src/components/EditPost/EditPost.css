@@ -3,18 +3,29 @@
     justify-content: space-between;
     align-items: center;
     background-color: #F8EDEB;
-    margin: 20px 100px;
+    margin: 20px 200px;
     padding: 20px;
+
 }
 
 .edit-image img {
     width: 100px;
-    height: 150px;
 }
 
 .edit-content {
     display: flex;
     flex-direction: column;
+    width: 400px;
+    justify-content: flex-start;
+    text-align: justify;
+}
+
+.edit-post-subject {
+    font-weight: bold;
+}
+
+.edit-delete-buttons {
+    display: flex;
 }
 
 .edit-button {

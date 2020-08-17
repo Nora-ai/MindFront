@@ -3,5 +3,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
+    background-color: #f0e6ef;
+    margin: 100px;
+    padding-bottom: 200px;
+    padding-top: 150px;
 }
+
+.subscribe-from-login-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe-from-login {
+}
+

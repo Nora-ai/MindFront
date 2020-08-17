@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Login.css'
 import { loginUser } from '../../services/auth'
+import { Link, Redirect } from 'react-router-dom'
 
 export default function Login (props) {
     const [formData, setFormData] = useState({
@@ -47,7 +48,8 @@ export default function Login (props) {
             </label>
             <button>Submit</button>
         </form>
-
-
+        <div className="subscribe-from-login-div">
+        <Redirect to='/login'><Link to="/subscribe"><button className="subscribe-from-login">Subscribe</button></Link></Redirect>
+       </div>
     </>)
 }
