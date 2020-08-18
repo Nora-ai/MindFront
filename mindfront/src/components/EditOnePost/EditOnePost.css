@@ -9,16 +9,19 @@
 .edit-label-subject {
     display: flex;
     flex-direction: column;
+    color: lightgray;
 }
 
 .edit-one-subject {
     width: 500px;
-    margin-bottom: 30px;
+    height: 30px;
+    margin-bottom: 10px;
 }
 
 .edit-label-content {
     display: flex;
     flex-direction: column;
+    color: lightgrey;
 }
 
 .edit-one-content {
@@ -29,14 +32,24 @@
 .edit-label-image {
     display: flex;
     flex-direction: column;
-    margin: 30px 0;
+    margin: 10px 0;
+    color: lightgrey;
 }
 
 .edit-one-image {
     width: 500px;
+    height: 30px;
+    margin-bottom: 10px;
     
 }
 
 .edit-one-submit {
-    
+    background-color: lavender;
+    border-color: lavender;
+    border-style: none;
+    border-radius: 2px;
+    width: 234px;
+    height: 34px;
+    margin: 5px 0;
+    padding: 0;
 }

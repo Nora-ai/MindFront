@@ -26,6 +26,7 @@
     writing-mode: vertical-rl; */
     font-weight: bold;
     font-size: 12px;
+    border-radius: 2px;
 }
 
 .nav-bar button span {

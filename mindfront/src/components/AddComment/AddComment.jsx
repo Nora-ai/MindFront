@@ -31,13 +31,14 @@ export default function AddComment (props) {
         className="add-comment">
             <label>
                 <input
+                    className="add-comment-input"
                     name="content"
                     type="text"
                     value={formData.content}
                     onChange={handleChange}
                 />
             </label>
-            <button>Add</button>
+            <button className="add-comment-add-button">Add Comment</button>
         </form>
         
         

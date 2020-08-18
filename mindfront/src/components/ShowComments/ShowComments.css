@@ -7,17 +7,20 @@
 }
 
 .show-one-post-subject {
-
+    font-weight: bold;
 }
 
 .show-one-post-content {
-    
+    width: 400px;
+    text-align: center;
 }
 
 .show-one-post-image {
-    
+    width: 400px;
 }
 
 .show-one-post-comments {
+    width: 400px;
+    text-align: center;
     
 }

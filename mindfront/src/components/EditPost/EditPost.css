@@ -2,7 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #F8EDEB;
+    border: 1px black solid;
+    border-radius: 2px;
     margin: 20px 200px;
     padding: 20px;
 
@@ -26,11 +27,27 @@
 
 .edit-delete-buttons {
     display: flex;
+    flex-direction: column;
 }
 
 .edit-button {
+    background-color: lavender;
+    border-color: lavender;
+    border-style: none;
+    border-radius: 2px;
+    width: 50px;
+    height: 34px;
+    margin: 5px 0;
+    padding: 0;
 }
 
 .delete-button {
-
+    background-color: lavender;
+    border-color: lavender;
+    border-style: none;
+    border-radius: 2px;
+    width: 50px;
+    height: 34px;
+    margin: 5px 0;
+    padding: 0;
 }

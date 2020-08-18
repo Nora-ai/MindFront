@@ -3,9 +3,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 100px;
+    margin-top: 200px;
     padding-bottom: 200px;
-    padding-top: 150px;
 }
 
 .subscribe-from-login-div {
@@ -16,7 +15,14 @@
 }
 
 .subscribe-from-login {
-
+    background-color: lavender;
+    border-color: lavender;
+    border-style: none;
+    border-radius: 2px;
+    width: 234px;
+    height: 34px;
+    margin: 0;
+    padding: 0;
 }
 
 .login-username-input {
@@ -29,7 +35,7 @@
 .login-password-input {
     width: 230px;
     height: 30px;
-    margin: 5px 0;
+    margin-top: 5px;
     padding: 0;
 }
 
@@ -37,9 +43,9 @@
     background-color: lavender;
     border-color: lavender;
     border-style: none;
-    width: 230px;
-    height: 30px;
-    margin: 0;
+    border-radius: 2px;
+    width: 234px;
+    height: 34px;
+    margin: 5px 0;
     padding: 0;
-
 }

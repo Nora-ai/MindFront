@@ -66,7 +66,7 @@ export default function CreatePost (props) {
                 />
             </label>
 
-            <button>Post to Feed</button>
+            <button className='new-post-submit'>Post to Feed</button>
 
         </form>
 

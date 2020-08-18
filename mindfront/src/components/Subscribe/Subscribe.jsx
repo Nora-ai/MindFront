@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { registerUser } from '../../services/auth'
 import './Subscribe.css'
+import { Redirect } from 'react-router-dom'
 
 export default function Subscribe (props) {
 
@@ -31,36 +32,39 @@ const handleSubmit = async (e) => {
 
             <h3>Subscribe to Mindfront</h3>
             <label>
-                Usernname
                 <input
+                    className="subscribe-username"
                     type="text"
                     name="username"
+                    placeholder="username"
                     value={formData.username}
                     onChange={handleChange}
                 />
             </label>
 
             <label>
-                Email Address
                 <input
+                    className="subscribe-email"
                     type="text"
                     name="email"
+                    placeholder="email"
                     value={formData.email}
                     onChange={handleChange}
                />
             </label>
 
             <label>
-                Password
                 <input
+                    className="subscribe-password"
                     type="password"
                     name="password"
+                    placeholder="password"
                     value={formData.password}
                     onChange={handleChange}
                 />
             </label>
 
-            <label>
+            {/* <label>
                 Confirm Password
                 <input
                     type="password"
@@ -68,9 +72,9 @@ const handleSubmit = async (e) => {
                     value={formData.password}
                     onChange={handleChange}
                 />
-            </label>
+            </label> */}
 
-            <button>Submit</button>
+            <button className="subscribe-submit">Subscribe</button>
 
         </form>
 

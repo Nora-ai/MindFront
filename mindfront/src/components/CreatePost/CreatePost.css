@@ -9,7 +9,8 @@
 
 .new-post-subject {
     width: 500px;
-    margin-bottom: 30px;
+    height: 30px;
+    margin-bottom: 20px;
 }
 
 .new-post-content {
@@ -19,5 +20,17 @@
 
 .new-post-image {
     width: 500px;
-    margin: 30px 0;
+    height: 30px;
+    margin: 20px 0;
+}
+
+.new-post-submit {
+    background-color: lavender;
+    border-color: lavender;
+    border-style: none;
+    border-radius: 2px;
+    width: 234px;
+    height: 34px;
+    margin: 5px 0;
+    padding: 0;
 }
