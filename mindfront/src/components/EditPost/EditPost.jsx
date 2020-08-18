@@ -1,8 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-//import { putPost } from '../../services/posts'
 import './EditPost.css'
-//import { destroyPost } from '../../services/posts'
 
 export default function EditPost (props) {
 
@@ -10,6 +8,10 @@ export default function EditPost (props) {
     return (<>
 
        <p className="my-posts-need-space"></p>
+        
+        {props.currentUser && props.posts.some(post => post.user_id === props.currentUser.id) ? 
+
+        <>
 
         {props.posts && props.currentUser && 
 
@@ -33,7 +35,13 @@ export default function EditPost (props) {
                     <button className="delete-button" onClick={() => props.handleDelete(post.id)}>Delete</button>
                 </div>
             </div>
-        ))} 
+        
+        ))}
+        
+        </>
+        :
+        <p>oops</p>
+        }
 
     </>)
 }

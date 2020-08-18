@@ -22,7 +22,7 @@ const handleChange = (e) => {
 const handleSubmit = async (e) => {
     e.preventDefault()
     const userData = await registerUser(formData)
-    props.setCurrentUser(userData)
+    // props.setCurrentUser(userData)
     props.history.push('/login')
 }
 

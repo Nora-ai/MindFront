@@ -16,6 +16,7 @@ import EditOnePost from '../EditOnePost/EditOnePost'
 import ShowPosts from '../ShowPosts/ShowPosts'
 import ShowComments from '../ShowComments/ShowComments'
 import Footer from '../Footer/Footer'
+//import Video from '../../Video'
 
 export default function Main(props) {
 
@@ -41,8 +42,8 @@ export default function Main(props) {
 
     useEffect(() => {
         getPosts()
-        getComments()
-        editPost()
+        // getComments()
+        // editPost()
     }, [])
 
 

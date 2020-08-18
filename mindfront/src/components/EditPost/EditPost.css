@@ -77,6 +77,13 @@
 /* mobile */
 @media (min-width: 320px) and (max-width: 767px) {
 
-    
+    .edit-post {
+        margin: 20px 80px;
+        flex-direction: column;
+    }
+
+    .edit-delete-buttons {
+        flex-direction: row;
+    }
 
 }
