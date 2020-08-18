@@ -48,4 +48,25 @@
 /* mobile */
 @media (min-width: 320px) and (max-width: 767px) {
 
+    .homepage-image {
+        width: 175px;
+        top: 400px;
+        right: 60px;
+    }
+
+    .homepage-description {
+        top: 150px;
+        left: 100px;
+    }
+
+    .mindfront-description {
+        font-size: 12px;
+        width: 250px;
+        text-align: justify;
+    }
+
+    .about-us {
+        font-size: 14px;
+    }
+
 }

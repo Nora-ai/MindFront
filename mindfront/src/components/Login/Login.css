@@ -50,3 +50,12 @@
     padding: 0;
     font-family: 'Baloo Tamma 2';
 }
+
+/* mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .login-form {
+        margin-top: 100px;
+    }
+
+}

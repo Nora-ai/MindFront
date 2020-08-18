@@ -45,3 +45,28 @@
     margin: 5px 0;
     padding: 0;
 }
+
+
+/* mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .new-post {
+        margin-top: 50px;
+    }
+
+    .new-post-subject {
+        width: 250px;
+    }
+
+    .new-post-content {
+        width: 250px;
+    }
+
+    .new-post-image {
+        width: 250px;
+    }
+
+    .new-post-submit {
+        width: 250px;
+    }
+}

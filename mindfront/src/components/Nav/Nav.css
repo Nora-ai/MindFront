@@ -22,8 +22,6 @@
     background-color: black;
     color: white;
     border: none;
-    /* text-orientation: sideways;
-    writing-mode: vertical-rl; */
     font-weight: bold;
     font-size: 12px;
     border-radius: 2px;
@@ -45,4 +43,19 @@
     width: 30px;
     height: 30px;
     margin: 20px;
+}
+
+/* mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .nav-bar button {
+        width: 35px;
+        height: 80px;
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .nav-bar img {
+       display: none;
+    }
 }

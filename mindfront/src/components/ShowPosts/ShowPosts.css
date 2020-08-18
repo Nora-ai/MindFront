@@ -41,3 +41,20 @@
         width: 300px;
     }
 }
+
+/* mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .show-posts-image {
+        width: 200px;
+    }
+
+    .homepage-posts {
+        margin: 30px 75px;
+        padding: 0;
+    }
+
+    .show-posts-content {
+        max-width: 175px;
+    }
+}

@@ -59,16 +59,24 @@
 /* tablet */
 @media (min-width: 768px) and (max-width: 1000px) {
 
-.edit-post {
-    margin: 20px 150px;
+    .edit-post {
+        margin: 20px 150px;
+    }
+
+    .my-posts-need-space {
+        height: 50px;
+    }
+
+    .edit-content {
+        width: 250px;
+    }
+
 }
 
-.my-posts-need-space {
-    height: 50px;
-}
 
-.edit-content {
-    width: 250px;
-}
+/* mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+
+    
 
 }

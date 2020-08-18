@@ -34,9 +34,28 @@
 /* tablet */
 @media (min-width: 768px) and (max-width: 1000px) {
 
-.footer-quote {
-    font-size: 20px;
+    .footer-quote {
+        font-size: 20px;
+    }
+
 }
 
+/* mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .footer {
+        padding: 50px 0;
+        margin: 30px 30px;
+    }
+
+    .footer-links,
+    .footer-mindfront {
+        display: none;
+
+    }
+
+    .footer-quote {
+        margin: 0;
+    }
 
 }
