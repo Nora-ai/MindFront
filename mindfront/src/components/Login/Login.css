@@ -3,5 +3,43 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
+    margin: 100px;
+    padding-bottom: 200px;
+    padding-top: 150px;
+}
+
+.subscribe-from-login-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe-from-login {
+
+}
+
+.login-username-input {
+    width: 230px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.login-password-input {
+    width: 230px;
+    height: 30px;
+    margin: 5px 0;
+    padding: 0;
+}
+
+.login-submit {
+    background-color: lavender;
+    border-color: lavender;
+    border-style: none;
+    width: 230px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+
 }

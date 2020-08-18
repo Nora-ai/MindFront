@@ -22,12 +22,12 @@ const handleSubmit = async (e) => {
     e.preventDefault()
     const userData = await registerUser(formData)
     props.setCurrentUser(userData)
-    props.history.push('/')
+    props.history.push('/login')
 }
 
     return (<>
 
-        <form className="subscribe-form">
+        <form className="subscribe-form" onSubmit={handleSubmit}>
 
             <h3>Subscribe to Mindfront</h3>
             <label>
