@@ -54,3 +54,21 @@
     margin: 5px 0;
     padding: 0;
 }
+
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1000px) {
+
+.edit-post {
+    margin: 20px 150px;
+}
+
+.my-posts-need-space {
+    height: 50px;
+}
+
+.edit-content {
+    width: 250px;
+}
+
+}

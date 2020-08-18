@@ -10,6 +10,7 @@
     display: flex;
     flex-direction: column;
     color: lightgray;
+    font-family: 'Baloo Tamma 2';
 }
 
 .edit-one-subject {
@@ -19,12 +20,14 @@
     border: 1px solid black;
     border-radius: 2px;
     font-size: 16px;
+    font-family: 'Baloo Tamma 2';
 }
 
 .edit-label-content {
     display: flex;
     flex-direction: column;
     color: lightgrey;
+    font-family: 'Baloo Tamma 2';
 }
 
 .edit-one-content {
@@ -33,6 +36,7 @@
     border: 1px solid black;
     border-radius: 2px;
     font-size: 16px;
+    font-family: 'Baloo Tamma 2';
 }
 
 .edit-label-image {
@@ -40,6 +44,7 @@
     flex-direction: column;
     margin: 10px 0;
     color: lightgrey;
+    font-family: 'Baloo Tamma 2';
     
 }
 
@@ -49,7 +54,7 @@
     margin-bottom: 10px;
     border: 1px solid black;
     border-radius: 2px;
-    
+    font-family: 'Baloo Tamma 2';
 }
 
 .edit-one-submit {
@@ -61,4 +66,5 @@
     height: 34px;
     margin: 5px 0;
     padding: 0;
+    font-family: 'Baloo Tamma 2';
 }

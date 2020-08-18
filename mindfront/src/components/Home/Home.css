@@ -24,3 +24,28 @@
     filter: grayscale(80%);
 
 }
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1000px) {
+
+    .homepage-description {
+        left: 150px;
+    }
+
+    .mindfront-description {
+        font-size: 16px;
+        width: 200px;
+    }
+
+    .homepage-image {
+        width: 300px;
+        right: 100px;
+        top: 220px;
+    }
+
+}
+
+/* mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+
+}
