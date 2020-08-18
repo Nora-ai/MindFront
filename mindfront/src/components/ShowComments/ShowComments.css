@@ -8,6 +8,7 @@
 
 .show-one-post-subject {
     font-weight: bold;
+    font-size: 20px;
 }
 
 .show-one-post-content {
@@ -22,5 +23,6 @@
 .show-one-post-comments {
     width: 400px;
     text-align: center;
+    font-style: italic;
     
 }

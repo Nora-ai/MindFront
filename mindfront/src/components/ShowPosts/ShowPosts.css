@@ -5,12 +5,13 @@
     justify-content: center;
     align-items: center;
     background-color: lavender;
-    margin: 50px 100px 0 100px;
+    margin: 50px 200px 0 200px;
     padding: 50px 0;
 }
 
 .show-posts-subject {
     font-weight: bold;
+    font-size: 20px;
 }
 
 .show-posts-content {
@@ -20,4 +21,16 @@
 
 .show-posts-image {
     width: 400px;
+}
+
+.show-posts-comments-link {
+     background-color: black;
+     color: white;
+     text-decoration: none;
+     width: 100px;
+     height: 30px;
+     border-style: none;
+     margin: 20px;
+     font-family: 'Baloo Tamma 2';
+
 }

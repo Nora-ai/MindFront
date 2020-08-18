@@ -18,6 +18,9 @@
 .homepage-image {
     width: 400px;
     position: absolute;
-    right: 100px;
+    right: 150px;
     top: 200px;
+    border-radius: 2px;
+    filter: grayscale(80%);
+
 }

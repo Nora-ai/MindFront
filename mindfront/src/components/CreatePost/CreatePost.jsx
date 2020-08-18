@@ -46,7 +46,7 @@ export default function CreatePost (props) {
             </label>
 
             <label>
-                <input
+                <textarea
                     className="new-post-content"
                     name="content"
                     type="text"

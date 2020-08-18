@@ -12,7 +12,22 @@
     justify-content: center;
 }
 
+.footer-mindfront {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer-quote {
+    font-style: italic;
+    font-size: 22px;
+}
+
+.footer-info {
+    font-weight: bold;
+}
+
 .footer-links {
     display: flex;
     flex-direction: column;
 }
+

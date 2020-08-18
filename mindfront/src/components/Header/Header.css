@@ -1,6 +1,7 @@
 .mindfront-logo {
     margin-left: 150px;
     margin-top: 50px;
+    font-size: 42px;
 }
 
 .login-button {
@@ -10,6 +11,7 @@
     background: transparent;
     border: none;
     font-size: 20px;
+    font-family: 'Baloo Tamma 2';
 }
 
 .subscribe-button {
@@ -19,18 +21,27 @@
     background: transparent;
     border: none;
     font-size: 20px;
+    font-family: 'Baloo Tamma 2';
 }
 
 .signed-in-user {
     position: absolute;
-    right: 220px;
-    top: 80px;
+    right: 100px;
+    top: 50px;
     font-size: 20px;
+    margin: 0;
+    padding: 15px 40px;
+    background-color: lavender;
+    border-radius: 2px;
 }
 
 .logout {
     position: absolute;
-    right: 200px;
-    top: 80px;
+    right: 100px;
+    top: 125px;
     font-size: 20px;
+    background-color: transparent;
+    border-style: none;
+    font-size: 14px;
+    color: lightgray;
 }

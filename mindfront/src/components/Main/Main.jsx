@@ -15,7 +15,6 @@ import EditPost from '../EditPost/EditPost'
 import EditOnePost from '../EditOnePost/EditOnePost'
 import ShowPosts from '../ShowPosts/ShowPosts'
 import ShowComments from '../ShowComments/ShowComments'
-//import AddComments from '../AddComments/AddComments'
 import Footer from '../Footer/Footer'
 
 export default function Main(props) {

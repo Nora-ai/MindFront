@@ -1,12 +1,15 @@
+.my-posts-need-space {
+    height: 100px;
+}
+
 .edit-post {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px black solid;
+    background-color: lavender;
     border-radius: 2px;
     margin: 20px 200px;
     padding: 20px;
-
 }
 
 .edit-image img {
@@ -31,9 +34,9 @@
 }
 
 .edit-button {
-    background-color: lavender;
-    border-color: lavender;
-    border-style: none;
+    background-color: black;
+    border-color: black;
+    color: white;
     border-radius: 2px;
     width: 50px;
     height: 34px;
@@ -42,9 +45,9 @@
 }
 
 .delete-button {
-    background-color: lavender;
-    border-color: lavender;
-    border-style: none;
+    background-color: black;
+    border-color: black;
+    color: white;
     border-radius: 2px;
     width: 50px;
     height: 34px;

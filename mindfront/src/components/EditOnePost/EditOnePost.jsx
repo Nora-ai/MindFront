@@ -58,7 +58,7 @@ const handleSubmit = async (e) => {
             </label>
             <label className="edit-label-content">
                 content
-                <input
+                <textarea
                     className="edit-one-content"
                     type="text"
                     name="content"

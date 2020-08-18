@@ -16,6 +16,9 @@
     width: 500px;
     height: 30px;
     margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 2px;
+    font-size: 16px;
 }
 
 .edit-label-content {
@@ -27,6 +30,9 @@
 .edit-one-content {
     width: 500px;
     height: 200px;
+    border: 1px solid black;
+    border-radius: 2px;
+    font-size: 16px;
 }
 
 .edit-label-image {
@@ -34,12 +40,15 @@
     flex-direction: column;
     margin: 10px 0;
     color: lightgrey;
+    
 }
 
 .edit-one-image {
     width: 500px;
     height: 30px;
     margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 2px;
     
 }
 

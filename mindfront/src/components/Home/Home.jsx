@@ -13,7 +13,7 @@ export default function Home () {
             <p className='about-us'>About us</p>
         </div>
 
-        <img className="homepage-image" src="https://res.cloudinary.com/alienora/image/upload/v1597189947/pexels-fotografierende-4617223_t7zr9m.jpg"></img>
+        <img className="homepage-image" src="https://res.cloudinary.com/alienora/image/upload/v1597189947/pexels-fotografierende-4617223_t7zr9m.jpg" alt="homepage-image"></img>
 
         <ShowPosts />
 

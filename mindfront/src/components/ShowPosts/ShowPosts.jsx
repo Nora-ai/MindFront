@@ -29,9 +29,9 @@ export default function ShowPosts (props) {
             
 
             {props.currentUser ? 
-            <Link to={`/post/${post.id}/comments`}><p>Comments</p></Link>
+            <Link to={`/post/${post.id}/comments`}><button className="show-posts-comments-link">Comments</button></Link>
             :
-            <Link to='/login'><p>Comments</p></Link>
+            <Link to='/login'><button className="show-posts-comments-link">Comments</button></Link>
             }
 
             </div>

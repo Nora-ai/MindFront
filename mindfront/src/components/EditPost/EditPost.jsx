@@ -1,13 +1,15 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 //import { putPost } from '../../services/posts'
 import './EditPost.css'
-import { destroyPost } from '../../services/posts'
+//import { destroyPost } from '../../services/posts'
 
 export default function EditPost (props) {
 
 
     return (<>
+
+       <p className="my-posts-need-space"></p>
 
         {props.posts && props.currentUser && 
 
@@ -18,7 +20,7 @@ export default function EditPost (props) {
         }).map((post) => (
             <div className="edit-post">
                 <div className="edit-image">
-                    <img src={post.img_url}></img>
+                    <img src={post.img_url} alt="post-image"></img>
                 </div>
                 <div className='edit-content'> 
                     <p className="edit-post-subject">{post.subject}</p>
