@@ -2,3 +2,19 @@
 .need-space {
     height: 800px;
 }
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1000px) {
+
+    .need-space {
+        height: 600px;
+    }
+}
+
+/* mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .need-space {
+        height: 600px;
+    }
+}

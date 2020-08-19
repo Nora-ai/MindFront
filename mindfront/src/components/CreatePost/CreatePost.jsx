@@ -46,7 +46,7 @@ export default function CreatePost (props) {
             </label>
 
             <label>
-                <input
+                <textarea
                     className="new-post-content"
                     name="content"
                     type="text"
@@ -59,13 +59,14 @@ export default function CreatePost (props) {
                 <input
                 className="new-post-image"
                 type="text"
-                placeholder="image"
-                value={formData.img_url}
+                name="img_url"
+                placeholder="image-url"
+                src={formData.img_url}
                 onChange={handleChange}
                 />
             </label>
 
-            <button>Post to Feed</button>
+            <button className='new-post-submit'>Post to Feed</button>
 
         </form>
 

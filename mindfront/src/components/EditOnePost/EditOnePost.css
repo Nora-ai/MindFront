@@ -1,4 +1,4 @@
-.new-post {
+.edit-one-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -6,18 +6,31 @@
     margin-top: 100px;
 }
 
+.edit-label-subject {
+    display: flex;
+    flex-direction: column;
+    color: lightgray;
+    font-family: 'Baloo Tamma 2';
+}
 
-.new-post-subject {
+.edit-one-subject {
     width: 500px;
     height: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border: 1px solid black;
     border-radius: 2px;
     font-size: 16px;
     font-family: 'Baloo Tamma 2';
 }
 
-.new-post-content {
+.edit-label-content {
+    display: flex;
+    flex-direction: column;
+    color: lightgrey;
+    font-family: 'Baloo Tamma 2';
+}
+
+.edit-one-content {
     width: 500px;
     height: 200px;
     border: 1px solid black;
@@ -26,16 +39,25 @@
     font-family: 'Baloo Tamma 2';
 }
 
-.new-post-image {
+.edit-label-image {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    color: lightgrey;
+    font-family: 'Baloo Tamma 2';
+    
+}
+
+.edit-one-image {
     width: 500px;
     height: 30px;
-    margin: 20px 0;
+    margin-bottom: 10px;
     border: 1px solid black;
     border-radius: 2px;
     font-family: 'Baloo Tamma 2';
 }
 
-.new-post-submit {
+.edit-one-submit {
     background-color: lavender;
     border-color: lavender;
     border-style: none;
@@ -44,24 +66,25 @@
     height: 34px;
     margin: 5px 0;
     padding: 0;
+    font-family: 'Baloo Tamma 2';
 }
-
 
 /* mobile */
 @media (min-width: 320px) and (max-width: 767px) {
 
-    .new-post {
+    .edit-one-form {
         margin-top: 50px;
     }
 
-    .new-post-subject,
-    .new-post-content,
-    .new-post-image {
+    .edit-one-subject,
+    .edit-one-content, 
+    .edit-one-image {
         width: 250px;
     }
-
-
-    .new-post-submit {
+    
+    .edit-one-submit {
         width: 254px;
     }
+
+
 }

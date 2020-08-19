@@ -5,3 +5,31 @@
     align-items: center;
     margin-top: 200px;
 }
+
+.subscribe-username,
+.subscribe-email,
+.subscribe-password {
+    width: 230px;
+    height: 30px;
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+.subscribe-submit {
+    background-color: lavender;
+    border-color: lavender;
+    border-style: none;
+    border-radius: 2px;
+    width: 234px;
+    height: 34px;
+    padding: 0;
+    font-family: 'Baloo Tamma 2';
+}
+
+/* mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .subscribe-form {
+        margin-top: 100px;
+    }
+}
