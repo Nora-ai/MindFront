@@ -6,12 +6,12 @@ export default function Footer () {
     return(<>
         <div className="footer">
             <div className='end-quote'>
-                <p>MindFront</p>
-                <p>"I don't Mind if you don't Mind"</p>
+                <p className="footer-mindfront">MindFront</p>
+                <p className="footer-quote">"I don't Mind if you don't Mind"</p>
             </div>
 
             <div className='footer-links'>
-                <p>Information</p>
+                <p className="footer-info">Information</p>
                 <p>About Us</p>
                 <p>Privacy Policy</p>
                 <p>Terms and Conditions</p>

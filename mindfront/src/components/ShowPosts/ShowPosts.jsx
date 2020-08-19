@@ -22,16 +22,16 @@ export default function ShowPosts (props) {
         {props.posts &&
         
         props.posts.reverse().map((post) => (
-            <div className="homepage-posts">
+            <div key={post.id} className="homepage-posts">
             <p className="show-posts-subject">{post.subject}</p>
-            <img className="show-posts-image" src={post.img_url}></img>
+            <img className="show-posts-image" alt="show-posts" src={post.img_url}></img>
             <p className="show-posts-content">{post.content}</p>
             
 
             {props.currentUser ? 
-            <Link to={`/post/${post.id}/comments`}><p>Comments</p></Link>
+            <Link to={`/post/${post.id}/comments`}><button className="show-posts-comments-link">Comments</button></Link>
             :
-            <Link to='/login'><p>Comments</p></Link>
+            <Link to='/login'><button className="show-posts-comments-link">Comments</button></Link>
             }
 
             </div>

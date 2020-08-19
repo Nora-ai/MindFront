@@ -48,10 +48,14 @@ export default function Login (props) {
                     onChange={handleChange}
                 />
             </label>
-            <button className="login-submit">Submit</button>
-        </form>
-        <div className="subscribe-from-login-div">
-        <Redirect to='/login'><Link to="/subscribe"><button className="subscribe-from-login">Subscribe</button></Link></Redirect>
+            <button className="login-submit">Login</button>
+            <div className="subscribe-from-login-div">
+            <Link to="/subscribe">
+                <button className="subscribe-from-login">Subscribe</button>
+            </Link>
        </div>
+       </form>
     </>)
+        
+       
 }

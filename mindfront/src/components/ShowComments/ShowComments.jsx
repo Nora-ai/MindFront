@@ -26,8 +26,9 @@ export default function ShowComments (props) {
     { post && 
         <div className="show-all-comments">
             <p className="show-one-post-subject">{post.subject}</p>
-            <p className="show-one-post-content">{post.content}</p>
             <img className="show-one-post-image"src={post.img_url}></img>
+            <p className="show-one-post-content">{post.content}</p>
+            
 
             {comments.map((comment) => (
                 <p className="show-one-post-comments">{comment.content}</p>

@@ -46,7 +46,7 @@ export default function CreatePost (props) {
             </label>
 
             <label>
-                <input
+                <textarea
                     className="new-post-content"
                     name="content"
                     type="text"
@@ -66,7 +66,7 @@ export default function CreatePost (props) {
                 />
             </label>
 
-            <button>Post to Feed</button>
+            <button className='new-post-submit'>Post to Feed</button>
 
         </form>
 

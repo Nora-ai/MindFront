@@ -1,13 +1,17 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
-//import { putPost } from '../../services/posts'
 import './EditPost.css'
-import { destroyPost } from '../../services/posts'
 
 export default function EditPost (props) {
 
 
     return (<>
+
+       <p className="my-posts-need-space"></p>
+        
+        {props.currentUser && props.posts.some(post => post.user_id === props.currentUser.id) ? 
+
+        <>
 
         {props.posts && props.currentUser && 
 
@@ -18,7 +22,7 @@ export default function EditPost (props) {
         }).map((post) => (
             <div className="edit-post">
                 <div className="edit-image">
-                    <img src={post.img_url}></img>
+                    <img src={post.img_url} alt="post"></img>
                 </div>
                 <div className='edit-content'> 
                     <p className="edit-post-subject">{post.subject}</p>
@@ -31,7 +35,15 @@ export default function EditPost (props) {
                     <button className="delete-button" onClick={() => props.handleDelete(post.id)}>Delete</button>
                 </div>
             </div>
-        ))} 
+        
+        ))}
+
+        </>
+        :
+        <div className="create-your-first-post-div">
+        <Link to='./new-post'><p className="create-your-first-post">Create your first post!</p></Link>
+        </div>
+        }
 
     </>)
 }

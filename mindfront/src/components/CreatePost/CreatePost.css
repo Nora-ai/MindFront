@@ -9,15 +9,59 @@
 
 .new-post-subject {
     width: 500px;
-    margin-bottom: 30px;
+    height: 30px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 2px;
+    font-size: 16px;
+    font-family: 'Baloo Tamma 2';
 }
 
 .new-post-content {
     width: 500px;
     height: 200px;
+    border: 1px solid black;
+    border-radius: 2px;
+    font-size: 16px;
+    font-family: 'Baloo Tamma 2';
 }
 
 .new-post-image {
     width: 500px;
-    margin: 30px 0;
+    height: 30px;
+    margin: 20px 0;
+    border: 1px solid black;
+    border-radius: 2px;
+    font-family: 'Baloo Tamma 2';
+}
+
+.new-post-submit {
+    background-color: lavender;
+    border-color: lavender;
+    border-style: none;
+    border-radius: 2px;
+    width: 234px;
+    height: 34px;
+    margin: 5px 0;
+    padding: 0;
+}
+
+
+/* mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .new-post {
+        margin-top: 50px;
+    }
+
+    .new-post-subject,
+    .new-post-content,
+    .new-post-image {
+        width: 250px;
+    }
+
+
+    .new-post-submit {
+        width: 254px;
+    }
 }

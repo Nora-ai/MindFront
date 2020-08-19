@@ -19,7 +19,6 @@ export default function Header (props) {
         <h1 className="mindfront-logo">MindFront</h1>
 
       
-           {/* <Link to='/login'><button className="login-button">Login</button></Link> */}
           
             {props.currentUser ? (<>
             <p className="signed-in-user">{props.currentUser.username}</p>
@@ -31,7 +30,6 @@ export default function Header (props) {
             </>
             }
 
-            {/* <Link to='/subscribe'><button className="subscribe-button">Subscribe</button></Link> */}
     </>)
 
 }
