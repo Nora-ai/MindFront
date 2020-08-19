@@ -15,7 +15,7 @@
     font-weight: bold;
 }
 
-.homepage-image {
+/* .homepage-image {
     width: 400px;
     position: absolute;
     right: 150px;
@@ -24,6 +24,13 @@
     filter: grayscale(80%);
 
 }
+
+.video-image {
+    width: 400px;
+    position: absolute;
+    right: 150px;
+    top: 200px;
+} */
 
 /* tablet */
 @media (min-width: 768px) and (max-width: 1000px) {

@@ -1,6 +1,7 @@
 import React from 'react'
 import './Home.css'
 import ShowPosts from '../ShowPosts/ShowPosts'
+import Video from '../../Video'
 
 
 export default function Home () {
@@ -13,8 +14,11 @@ export default function Home () {
             <p className='about-us'>About Us</p>
         </div>
 
-        <img className="homepage-image" src="https://res.cloudinary.com/alienora/image/upload/v1597189947/pexels-fotografierende-4617223_t7zr9m.jpg" alt="homepage"></img>
+        {/* <img className="homepage-image" src="https://res.cloudinary.com/alienora/image/upload/v1597189947/pexels-fotografierende-4617223_t7zr9m.jpg" alt="homepage"></img> */}
 
+        <div className="video-image">
+        <Video />
+        </div>
         <ShowPosts />
 
     </>)

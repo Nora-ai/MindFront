@@ -1,0 +1,28 @@
+
+.fullscreen-bg {
+    position: absolute;
+    z-index: -1;
+}
+
+.fullscreen-bg-video {
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    top: 270px;
+    margin-left: 500px;
+    transform: rotate(90deg);
+} 
+
+/* mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .fullscreen-bg-video {
+        width: 500px;
+        height: 400px;
+        position: absolute;
+        top: 400px;
+        margin-left: 0px;
+        transform: rotate(180deg)
+
+}
+}
