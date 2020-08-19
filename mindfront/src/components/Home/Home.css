@@ -15,14 +15,13 @@
     font-weight: bold;
 }
 
-.homepage-image {
+/* .homepage-image {
     width: 400px;
     position: absolute;
     right: 150px;
     top: 200px;
     border-radius: 2px;
     filter: grayscale(80%);
-
 }
 
 /* tablet */
