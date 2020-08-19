@@ -11,7 +11,9 @@ export default function EditPost (props) {
         
         {props.currentUser && props.posts.some(post => post.user_id === props.currentUser.id) ? 
 
+
         <>
+
 
         {props.posts && props.currentUser && 
 

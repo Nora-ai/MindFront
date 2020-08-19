@@ -7,6 +7,7 @@ import AddComment from './../AddComment/AddComment'
 export default function ShowComments (props) {
   
     const postId = props.match.params.id
+
    
     const [post, setPost] = useState(null)
     const [comments, setComments] = useState([])
@@ -28,7 +29,7 @@ export default function ShowComments (props) {
             <p className="show-one-post-subject">{post.subject}</p>
             <img className="show-one-post-image"src={post.img_url}></img>
             <p className="show-one-post-content">{post.content}</p>
-            
+      
 
             {comments.map((comment) => (
                 <p className="show-one-post-comments">{comment.content}</p>
