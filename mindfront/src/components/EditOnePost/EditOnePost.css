@@ -68,3 +68,23 @@
     padding: 0;
     font-family: 'Baloo Tamma 2';
 }
+
+/* mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .edit-one-form {
+        margin-top: 50px;
+    }
+
+    .edit-one-subject,
+    .edit-one-content, 
+    .edit-one-image {
+        width: 250px;
+    }
+    
+    .edit-one-submit {
+        width: 254px;
+    }
+
+
+}

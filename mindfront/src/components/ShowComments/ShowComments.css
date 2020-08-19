@@ -26,3 +26,20 @@
     font-style: italic;
     
 }
+
+/* mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .show-all-comments {
+        margin-top: 50px;
+    }
+
+    .show-one-post-image {
+        width: 250px;
+    }
+
+    .show-one-post-comments {
+        width: 300px;
+    }
+
+}

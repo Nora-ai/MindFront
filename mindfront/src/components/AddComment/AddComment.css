@@ -25,3 +25,16 @@
     margin-top: 10px;
     font-family: 'Baloo Tamma 2';
 }
+
+/* mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .add-comment-input {
+        width: 250px;
+    }
+
+    .add-comment-add-button {
+        width: 254px;
+    }
+}
+

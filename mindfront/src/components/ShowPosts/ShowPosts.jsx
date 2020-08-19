@@ -24,7 +24,7 @@ export default function ShowPosts (props) {
         props.posts.reverse().map((post) => (
             <div key={post.id} className="homepage-posts">
             <p className="show-posts-subject">{post.subject}</p>
-            <img className="show-posts-image" src={post.img_url}></img>
+            <img className="show-posts-image" alt="show-posts" src={post.img_url}></img>
             <p className="show-posts-content">{post.content}</p>
             
 

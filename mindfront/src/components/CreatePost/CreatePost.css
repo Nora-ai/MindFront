@@ -54,19 +54,14 @@
         margin-top: 50px;
     }
 
-    .new-post-subject {
-        width: 250px;
-    }
-
-    .new-post-content {
-        width: 250px;
-    }
-
+    .new-post-subject,
+    .new-post-content,
     .new-post-image {
         width: 250px;
     }
 
+
     .new-post-submit {
-        width: 250px;
+        width: 254px;
     }
 }

@@ -55,6 +55,15 @@
     padding: 0;
 }
 
+.create-your-first-post-div {
+    display: flex;
+    justify-content: center;
+}
+
+.create-your-first-post {
+    background-color: lavender;
+    padding: 50px;
+}
 
 /* tablet */
 @media (min-width: 768px) and (max-width: 1000px) {
@@ -86,4 +95,22 @@
         flex-direction: row;
     }
 
+    .edit-button,
+    .delete-button {
+        margin: 5px;
+    }
+
+    .my-posts-need-space {
+        height: 30px;
+    }
+
+    .edit-content {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .edit-post-content {
+        width: 200px;
+        text-align: center;
+    }
 }

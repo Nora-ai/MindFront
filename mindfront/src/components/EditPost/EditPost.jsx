@@ -22,7 +22,7 @@ export default function EditPost (props) {
         }).map((post) => (
             <div className="edit-post">
                 <div className="edit-image">
-                    <img src={post.img_url} alt="post-image"></img>
+                    <img src={post.img_url} alt="post"></img>
                 </div>
                 <div className='edit-content'> 
                     <p className="edit-post-subject">{post.subject}</p>
@@ -37,10 +37,12 @@ export default function EditPost (props) {
             </div>
         
         ))}
-        
+
         </>
         :
-        <p>oops</p>
+        <div className="create-your-first-post-div">
+        <Link to='./new-post'><p className="create-your-first-post">Create your first post!</p></Link>
+        </div>
         }
 
     </>)

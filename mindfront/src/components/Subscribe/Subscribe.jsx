@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { registerUser } from '../../services/auth'
 import './Subscribe.css'
-import { Redirect } from 'react-router-dom'
 
 export default function Subscribe (props) {
 
