@@ -1,13 +1,12 @@
 .homepage-description {
-    width: 300px;
-    position: absolute;
-    top: 200px;
-    left: 200px;
+    margin: 0 auto;
+    width: 75%;
 }
 
 
 .mindfront-description {
     font-size: 20px;
+    
 }
 
 .about-us {
@@ -33,14 +32,8 @@
 
     .mindfront-description {
         font-size: 16px;
-        width: 200px;
     }
 
-    .homepage-image {
-        width: 300px;
-        right: 100px;
-        top: 220px;
-    }
 
 }
 

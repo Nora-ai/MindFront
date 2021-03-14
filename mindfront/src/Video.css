@@ -1,28 +1,26 @@
 
 .fullscreen-bg {
-    position: absolute;
+    /* position: absolute; */
     z-index: -1;
 }
 
 .fullscreen-bg-video {
-    width: 500px;
-    height: 400px;
-    position: absolute;
-    top: 270px;
-    margin-left: 500px;
-    transform: rotate(90deg);
+    width: 100%;
+    height: 400px; 
+    margin-left: 3%;
+    /* transform: rotate(90deg); */
 } 
 
 
 @media screen and (min-width: 1300px) {
 
     .fullscreen-bg-video {
-        width: 600px;
+        /* width: 600px;
         height: 400px;
         position: absolute;
         top: 100px;
-        margin-left: 600px;
-        transform: rotate(180deg)
+        margin-left: 600px; */
+        /* transform: rotate(180deg) */
     }
 }
 
@@ -30,12 +28,12 @@
 @media (min-width: 1001px) and (max-width: 1299px) {
 
     .fullscreen-bg-video {
-        width: 500px;
+        /* width: 500px;
         height: 400px;
         position: absolute;
         top: 120px;
-        margin-left: 500px;
-        transform: rotate(90deg);
+        margin-left: 500px; */
+        /* transform: rotate(90deg); */
     }
 }
 
@@ -43,12 +41,12 @@
 @media (min-width: 768px) and (max-width: 1000px) {
 
     .fullscreen-bg-video {
-        width: 450px;
+        /* width: 450px;
         height: 400px;
         position: absolute;
         top: 100px;
-        margin-left: 400px;
-        transform: rotate(90deg)
+        margin-left: 400px; */
+        /* transform: rotate(90deg) */
     }
 }
 
@@ -57,11 +55,11 @@
 @media (min-width: 320px) and (max-width: 767px) {
 
     .fullscreen-bg-video {
-        width: 400px;
+        /* width: 400px;
         height: 300px;
         position: absolute;
         top: 300px;
-        margin-left: 0px;
-        transform: rotate(180deg)
+        margin-left: 0px; */
+        /* transform: rotate(180deg) */
     }
 }
