@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './Login.css'
 import { loginUser } from '../../services/auth'
-import { Link, Redirect } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 export default function Login (props) {
     const [formData, setFormData] = useState({

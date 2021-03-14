@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './Nav.css'
-import { checkPropTypes } from 'prop-types'
+// import { checkPropTypes } from 'prop-types'
 
 export default function Nav (props) {
 

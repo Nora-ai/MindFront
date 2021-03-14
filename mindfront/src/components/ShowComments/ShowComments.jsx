@@ -14,7 +14,7 @@ export default function ShowComments (props) {
 
     useEffect(() => {
         showComments()
-    }, [])
+    })
 
     const showComments = async () => {
         const post = await readOnePost(postId)
@@ -27,7 +27,7 @@ export default function ShowComments (props) {
     { post && 
         <div className="show-all-comments">
             <p className="show-one-post-subject">{post.subject}</p>
-            <img className="show-one-post-image"src={post.img_url}></img>
+            <img className="show-one-post-image"src={post.img_url} alt="post"></img>
             <p className="show-one-post-content">{post.content}</p>
       
 

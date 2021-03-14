@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react'
 import { Route } from 'react-router-dom'
 import './Main.css'
 import { readAllPosts } from '../../services/posts'
-import { readAllComments } from '../../services/comments'
-import { putPost } from '../../services/posts'
+// import { readAllComments } from '../../services/comments'
+// import { putPost } from '../../services/posts'
 import { destroyPost } from '../../services/posts'
 
 import Nav from '../Nav/Nav'
@@ -22,22 +22,22 @@ export default function Main(props) {
     const {currentUser, setCurrentUser} = props
 
     const [posts, setPosts] = useState([])
-    const [comments, setComments] = useState([])
+    // const [comments, setComments] = useState([])
 
     const getPosts = async () => {
         const postsList = await readAllPosts()
         setPosts(postsList)
     }
 
-    const editPost = async () => {
-        const editPost = await putPost()
-        setPosts(editPost)
-    }
+    // const editPost = async () => {
+    //     const editPost = await putPost()
+    //     setPosts(editPost)
+    // }
 
-    const getComments = async () => {
-        const commentsList = await readAllComments()
-        setComments(commentsList)
-    }
+    // const getComments = async () => {
+    //     const commentsList = await readAllComments()
+    //     setComments(commentsList)
+    // }
 
     useEffect(() => {
         getPosts()

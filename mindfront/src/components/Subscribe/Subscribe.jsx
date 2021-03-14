@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { registerUser } from '../../services/auth'
+// import { registerUser } from '../../services/auth'
 import './Subscribe.css'
 
 export default function Subscribe (props) {
@@ -20,7 +20,7 @@ const handleChange = (e) => {
 
 const handleSubmit = async (e) => {
     e.preventDefault()
-    const userData = await registerUser(formData)
+    // const userData = await registerUser(formData)
     // props.setCurrentUser(userData)
     props.history.push('/login')
 }

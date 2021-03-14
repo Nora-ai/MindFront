@@ -1,7 +1,7 @@
 import api from './api-helper'
 
 export const readAllComments = async (post_id) => {
-    const resp = await api.get(`/posts/${post_id}/comments`)
+    // const resp = await api.get(`/posts/${post_id}/comments`)
 }
 
 export const readOneComment = async (post_id, id) => {
