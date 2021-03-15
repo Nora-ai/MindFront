@@ -1,0 +1,56 @@
+.homepage-description {
+    margin: 0 auto;
+    width: 75%;
+}
+
+
+.mindfront-description {
+    font-size: 20px;
+    
+}
+
+.about-us {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1000px) {
+
+    .homepage-description {
+        left: 150px;
+    }
+
+    .mindfront-description {
+        font-size: 16px;
+    }
+
+
+}
+
+/* mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .homepage-image {
+        width: 175px;
+        top: 400px;
+        right: 60px;
+    }
+
+    .homepage-description {
+        top: 150px;
+        left: 100px;
+    }
+
+    .mindfront-description {
+        font-size: 12px;
+        width: 250px;
+        text-align: justify;
+    }
+
+    .about-us {
+        font-size: 14px;
+    }
+
+}

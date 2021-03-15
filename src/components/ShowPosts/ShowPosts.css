@@ -1,0 +1,60 @@
+
+.homepage-posts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lavender;
+    margin: 50px 200px 0 200px;
+    padding: 50px 0;
+}
+
+.show-posts-subject {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.show-posts-content {
+    max-width: 400px;
+    text-align: justify;
+}
+
+.show-posts-image {
+    width: 400px;
+}
+
+.show-posts-comments-link {
+     background-color: black;
+     color: white;
+     text-decoration: none;
+     width: 100px;
+     height: 30px;
+     border-style: none;
+     margin: 20px;
+     font-family: 'Baloo Tamma 2';
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1000px) {
+
+    .show-posts-image {
+        width: 300px;
+    }
+}
+
+/* mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .show-posts-image {
+        width: 200px;
+    }
+
+    .homepage-posts {
+        margin: 30px 75px;
+        padding: 0;
+    }
+
+    .show-posts-content {
+        max-width: 175px;
+    }
+}

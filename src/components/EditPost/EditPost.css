@@ -1,0 +1,116 @@
+.my-posts-need-space {
+    height: 100px;
+}
+
+.edit-post {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lavender;
+    border-radius: 2px;
+    margin: 20px 200px;
+    padding: 20px;
+}
+
+.edit-image img {
+    width: 100px;
+}
+
+.edit-content {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    justify-content: flex-start;
+    text-align: justify;
+}
+
+.edit-post-subject {
+    font-weight: bold;
+}
+
+.edit-delete-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-button {
+    background-color: black;
+    border-color: black;
+    color: white;
+    border-radius: 2px;
+    width: 50px;
+    height: 34px;
+    margin: 5px 0;
+    padding: 0;
+}
+
+.delete-button {
+    background-color: black;
+    border-color: black;
+    color: white;
+    border-radius: 2px;
+    width: 50px;
+    height: 34px;
+    margin: 5px 0;
+    padding: 0;
+}
+
+.create-your-first-post-div {
+    display: flex;
+    justify-content: center;
+}
+
+.create-your-first-post {
+    background-color: lavender;
+    padding: 50px;
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1000px) {
+
+    .edit-post {
+        margin: 20px 150px;
+    }
+
+    .my-posts-need-space {
+        height: 50px;
+    }
+
+    .edit-content {
+        width: 250px;
+    }
+
+}
+
+
+/* mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .edit-post {
+        margin: 20px 80px;
+        flex-direction: column;
+    }
+
+    .edit-delete-buttons {
+        flex-direction: row;
+    }
+
+    .edit-button,
+    .delete-button {
+        margin: 5px;
+    }
+
+    .my-posts-need-space {
+        height: 30px;
+    }
+
+    .edit-content {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .edit-post-content {
+        width: 200px;
+        text-align: center;
+    }
+}

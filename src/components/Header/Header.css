@@ -1,0 +1,83 @@
+.mindfront-logo {
+    margin-left: 150px;
+    margin-top: 50px;
+    font-size: 42px;
+}
+
+.login-button {
+    position: absolute;
+    right: 200px;
+    top: 60px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    font-family: 'Baloo Tamma 2';
+}
+
+.subscribe-button {
+    position: absolute;
+    right: 80px;
+    top: 60px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    font-family: 'Baloo Tamma 2';
+}
+
+.signed-in-user {
+    position: absolute;
+    right: 100px;
+    top: 50px;
+    font-size: 20px;
+    margin: 0;
+    padding: 15px 40px;
+    background-color: lavender;
+    border-radius: 2px;
+}
+
+.logout {
+    position: absolute;
+    right: 100px;
+    top: 125px;
+    background-color: transparent;
+    border-style: none;
+    font-size: 14px;
+    color: lightgray;
+}
+
+
+/* mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .mindfront-logo {
+        margin-left: 100px;
+        margin-top: 50px;
+        font-size: 32px;
+    }
+    
+    .signed-in-user {
+        right: 50px;
+        top: 60px;
+        font-size: 20px;
+        margin: 0;
+        padding: 2px 20px;
+        
+    }
+    
+    .logout {
+        right: 50px;
+        top: 105px;
+        font-size: 20px;
+        font-size: 14px;
+    }
+
+    .login-button {
+        font-size: 18px;
+        right: 60px;
+        background-color: lavender;
+    }
+
+    .subscribe-button {
+        display: none;
+    }
+}

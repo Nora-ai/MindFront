@@ -1,0 +1,45 @@
+.show-all-comments {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.show-one-post-subject {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.show-one-post-content {
+    width: 400px;
+    text-align: center;
+}
+
+.show-one-post-image {
+    width: 400px;
+}
+
+.show-one-post-comments {
+    width: 400px;
+    text-align: center;
+    font-style: italic;
+    
+}
+
+/* mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .show-all-comments {
+        margin-top: 50px;
+    }
+
+    .show-one-post-image {
+        width: 250px;
+    }
+
+    .show-one-post-comments {
+        width: 300px;
+    }
+
+}
