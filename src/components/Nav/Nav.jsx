@@ -24,10 +24,10 @@ export default function Nav (props) {
             }
     </div>
         <div className="nav-bar-icons">
-            <img src="https://res.cloudinary.com/alienora/image/upload/v1597185032/download-2_z5wzon.png" alt="social-icon"></img>
-            <img src="https://res.cloudinary.com/alienora/image/upload/v1597185032/download-3_qhouh8.png" alt="social-icon"></img>
-            <img src="https://res.cloudinary.com/alienora/image/upload/v1597185032/download-1_aj2aa6.png" alt="social-icon"></img>
-            <img src="https://res.cloudinary.com/alienora/image/upload/v1597185172/instaPNG_x0guhl.png" alt="social-icon"></img>
+          <a href="https://www.facebook.com/tulchina/"><img src="https://res.cloudinary.com/alienora/image/upload/v1597185032/download-2_z5wzon.png" alt="facebook"></img></a>
+          <a href="https://www.linkedin.com/in/noratulchina/"><img src="https://res.cloudinary.com/alienora/image/upload/v1597185032/download-3_qhouh8.png" alt="linkedin"></img></a>
+          <a href="https://twitter.com/NoraTulchina"><img src="https://res.cloudinary.com/alienora/image/upload/v1597185032/download-1_aj2aa6.png" alt="twitter"></img></a>
+          <a href="https://www.instagram.com/noratulchina/"><img src="https://res.cloudinary.com/alienora/image/upload/v1597185172/instaPNG_x0guhl.png" alt="instagram"></img></a>
         </div>
     </div>
     </>)
