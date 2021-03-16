@@ -1,0 +1,41 @@
+.add-comment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.add-comment-input {
+    width: 400px;
+    height: 30px;
+    margin-top: 5px;
+    padding: 0;
+}
+
+.add-comment-add-button {
+    background-color: lavender;
+    border-color: lavender;
+    border-style: none;
+    border-radius: 2px;
+    width: 234px;
+    height: 34px;
+    padding: 0;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    font-family: 'Baloo Tamma 2';
+}
+
+/* mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .add-comment-input {
+        width: 250px;
+    }
+
+    .add-comment-add-button {
+        width: 254px;
+    }
+}
+
+

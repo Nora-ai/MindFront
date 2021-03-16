@@ -1,0 +1,62 @@
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    padding-bottom: 200px;
+}
+
+.subscribe-from-login-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe-from-login {
+    background-color: lavender;
+    border-color: lavender;
+    border-style: none;
+    border-radius: 2px;
+    width: 234px;
+    height: 34px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Tamma 2';
+}
+
+.login-username-input {
+    width: 230px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.login-password-input {
+    width: 230px;
+    height: 30px;
+    margin-top: 5px;
+    padding: 0;
+}
+
+.login-submit {
+    background-color: lavender;
+    border-color: lavender;
+    border-style: none;
+    border-radius: 2px;
+    width: 234px;
+    height: 34px;
+    margin: 5px 0;
+    padding: 0;
+    font-family: 'Baloo Tamma 2';
+}
+
+/* mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .login-form {
+        margin-top: 100px;
+    }
+
+}
