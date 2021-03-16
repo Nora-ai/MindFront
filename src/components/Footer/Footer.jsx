@@ -7,7 +7,7 @@ export default function Footer () {
         <div className="footer">
             <div className='end-quote'>
                 <p className="footer-mindfront">MindFront</p>
-                <p className="footer-quote">"I don't Mind if you don't Mind"</p>
+                <p className="footer-quote">"I Mind if you Mind"</p>
             </div>
 
             <div className='footer-links'>
